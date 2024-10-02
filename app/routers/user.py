@@ -79,3 +79,5 @@ async def create_user(user: UserCreate, db: AsyncSession = Depends(get_db)) -> A
     await db.commit()
     await db.refresh(db_user)  
     return db_user
+
+#
